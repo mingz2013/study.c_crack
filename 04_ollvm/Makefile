@@ -10,5 +10,5 @@ clean:
 	rm bin/*
 	rm obj/*
 ollvm-build:
-	/Users/zhaojm/src/obfuscator-llvm/build/bin/clang src/* -Iinc -o bin/main-ollvm -mllvm -fla -mllvm -split -mllvm -split_num=3 -mllvm -sub -mllvm -sub_loop=1 -mllvm -bcf -mllvm -bcf_loop=1 -mllvm -bcf_prob=100
+	~/src/obfuscator-llvm/build/bin/clang src/* -Iinc -o bin/main-ollvm -mllvm -fla -mllvm -split -mllvm -split_num=3 -mllvm -sub -mllvm -sub_loop=1 -mllvm -bcf -mllvm -bcf_loop=1 -mllvm -bcf_prob=100
 
