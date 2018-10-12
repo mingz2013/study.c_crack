@@ -17,6 +17,6 @@ clean:
 
 
 ollvm-build:
-	~/src/obfuscator-llvm/build/bin/clang src/* -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Iinc -o bin/main-ollvm -mllvm -fla -mllvm -split -mllvm -split_num=3 -mllvm -sub -mllvm -sub_loop=1 -mllvm -bcf -mllvm -bcf_loop=1 -mllvm -bcf_prob=100
+	~/src/obfuscator-llvm/build/bin/clang src/* -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Iinc -o bin/main-ollvm -mllvm -fla -mllvm -split -mllvm -split_num=3 -mllvm -sub -mllvm -sub_loop=1 -mllvm -bcf -mllvm -bcf_loop=1 -mllvm -bcf_prob=100
 
 .PYONY: clean, ollvm-build, all, main
