@@ -1,3 +1,6 @@
+help:
+	@echo "Makefile help"
+
 all:
 	make ollvm-build
 	make main
